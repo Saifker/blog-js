@@ -32,6 +32,20 @@ export default {
         },
       },
       {
+        tagName: 'script',
+        attributes: {
+          async: true,
+          src: 'https://www.googletagmanager.com/gtag/js?id=UA-116252748-1',
+        },
+      },
+      {
+        tagName: 'script',
+        innerString: `window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'UA-116252748-1');`,
+      },
+      {
         tagName: 'meta',
         attributes: {
           name: 'description',
